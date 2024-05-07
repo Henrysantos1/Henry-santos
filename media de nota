@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    float aval1,aval2,aval3,aval4,prova;
+    float p1,p2,p3,p4,p5,media;
+    
+    printf("insira a nota da atividade:\n");
+    scanf("%f",&aval1);
+    printf("insira o peso da atividade:\n");
+    scanf("%f",&p1);
+     printf("insira a nota da atividade:\n");
+    scanf("%f",&aval2);
+    printf("insira o peso da atividade:\n");
+    scanf("%f",&p2);
+    printf("insira a nota da atividade:\n");
+    scanf("%f",&aval3);
+    printf("insira o peso da atividade:\n");
+    scanf("%f",&p3);
+     printf("insira a nota da atividade:\n");
+    scanf("%f",&aval4);
+    printf("insira o peso da atividade:\n");
+    scanf("%f",&p4);
+     printf("insira a nota da prova:\n");
+    scanf("%f",&prova);
+    printf("insira o peso da prova:\n");
+    scanf("%f",&p5);
+    
+    media = (aval1*p1+aval2*p2+aval3*p3+aval4*p4+prova*p5)/(p1+p2+p3+p4+p5);
+    
+     printf("nota final: %.2f\n",media);
+    if (media >=6.0 && media <= 10.0)
+    {
+         printf("aluno aprovado:\n",media);
+    }
+     if (media >=4.0 && media <6.0)
+    {
+         printf("precisa refazer o exame:\n",media);
+    }
+     if (media >=0.0 && media <4.0)
+    {
+         printf("aluno reprovado\n",media);
+    }
+    
+    
+    
+    
+    
+    return 0;
+}
